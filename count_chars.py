@@ -12,13 +12,12 @@ sentence = sentence.replace(" ", "")
             ###print("letter: " + sentence[i][j] + ", count: " + str(sentence[i].count(sentence[i][j])))
 dic = {}
 
-for i in (sentence):
-    repeatedletter = []
+repeatedletter = []
 
-    for k in i:
-        j = (sentence.count(k))
-        if k not in repeatedletter:
-            repeatedletter.append(k)
-            dic[k] = j
+for letter in (sentence):
+    numberoftimes = (sentence.count(letter))
+    if letter not in repeatedletter:
+        repeatedletter.append(letter)
+        dic[letter] = numberoftimes
         
 print(dic)

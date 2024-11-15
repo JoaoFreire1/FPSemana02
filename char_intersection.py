@@ -6,4 +6,4 @@ b1 = b.split (" ")
 set2 = set(b1)
 
 same = (set1).intersection(set2)
-print(same)
+print(" ".join(same))
